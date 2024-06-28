@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    width: 100%;
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_left,
+.footer_right {
+    flex: 1;
+}
+
+.footer_logo {
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: white;
+}
+.logo span{
+    color: #DCB0FE;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    
+}
+
+.tagline {
+    margin-top: 1rem;;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+}
+
+.footer_contact {
+    margin-top: 20px;
+}
+
+.contact_label,
+.contact_email {
+    line-height: 1.5rem;;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social_row {
+    display: flex;
+    gap: 20px;
+}
+
+.social_link {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: capitalize;
+    color: #949494;
+    cursor: pointer;
+}
+
+#instagram,
+#twitter {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.footer_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer_line {
+    width: 100%;
+    max-width: 1200px;
+    border: 2px solid #949494;
+}
+
+.footer_rights {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    color: #949494;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer_left,
+    .footer_right {
+        margin-bottom: 20px;
+    }
+
+    .social_media {
+        gap: 10px;
+    }
+
+    .social_row {
+        justify-content: center;
+        gap: 10px;
+    }
+}

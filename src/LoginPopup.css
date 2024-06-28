@@ -1,0 +1,82 @@
+/* LoginPopup.css */
+.loginPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .loginPopup__content {
+    background-color: #fff;
+    padding: 30px;
+    
+    max-width: 400px; /* Adjust width as needed */
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    position: relative;
+    background:
+    linear-gradient(to top right, #b2df8d, transparent),
+    linear-gradient(to bottom left, #e1bcfe, transparent);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .loginPopup__content h2 {
+    font-size: 24px;
+    
+    margin-bottom: 20px;
+  }
+  
+  .loginPopup__content form {
+    display: flex;
+    flex-direction: column;
+  }
+  .loginPopup__content form input{
+    box-shadow: 3px 3px 5px 5px rgb(187, 180, 232);
+  }
+  
+  .loginPopup__content form input,
+  .loginPopup__content form button {
+    margin-bottom: 40px;
+    padding: 10px;
+    border: none;
+    
+    border-radius: 24px;
+    font-size: 16px;
+  }
+  
+  .loginPopup__content form button {
+    background-color:black;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+  }
+  
+  .close:hover {
+    color: #555;
+  }
+  form p{
+    text-align: center;
+    font-weight: 500;
+  }
+  form span{
+    text-decoration: underline;
+    color: red;
+    font-weight: 500;
+  }
+  
